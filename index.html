@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出現ポケモン計算ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>出現ポケモン計算</h1>
+        <p>出現ポケモンが8体になる最低睡眠スコアと睡眠時間を計算します。</p>
+        <p>マップを選んでください</p>
+        <div class="map-contents">
+            <div class="map" data-sleeppower="19564316">
+                <p>ワカクサ本島</p>
+            </div>
+            <div class="map" data-sleeppower="30497800">
+                <p>シアンの砂浜</p>
+            </div>
+            <div class="map" data-sleeppower="43762600">
+                <p>トープ 洞窟</p>
+            </div>
+            <div class="map" data-sleeppower="66286416">
+                <p>ウノハナ雪原</p>
+            </div>
+        </div>
+        <label for="ep"></label>
+        <input type="number" id="ep" name="ep" placeholder="エナジーを入力">
+        <button onclick="calculate()">計算</button>
+        <p id="score">必要最低睡眠スコア: <span id="sleepScore"></span></p>
+        <p id="hour">必要最低睡眠時間: <span id="sleephour"></span></p>
+     </main>
+    <script src="script.js"></script>
+</body>
+</html>
