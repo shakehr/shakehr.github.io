@@ -1,11 +1,9 @@
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 body {
   background-color: #d4ffd6;
+}
+
+main {
+  text-align: center;
 }
 
 .map-contents {
@@ -23,6 +21,7 @@ body {
 
 .map p {
   text-align: center;
+  margin: 0; /* 余白を除去 */
 }
 
 .map.selected {
@@ -43,8 +42,8 @@ button {
   border-radius: 5px;
 }
 
-#score, #hour {
+#score,
+#hour {
   margin-top: 20px;
   font-weight: bold;
 }
-
